@@ -1,18 +1,13 @@
-import ActiveLabel from './components/active-label';
-import NotActiveLabel from './components/not-active-label';
-import PendingLabel from './components/pending-label';
-import SuspendedLabel from './components/suspended-label';
-import TestLabel from './components/test-label';
+import StatusLabel, { Status } from '@/app/components/status-label';
 
 export default function Home() {
   return (
     <main>
-      <h1>Home page</h1>
-      <ActiveLabel>Active</ActiveLabel>
-      <NotActiveLabel>Not active</NotActiveLabel>
-      <PendingLabel>Pending</PendingLabel>
-      <SuspendedLabel>Suspended</SuspendedLabel>
-      <TestLabel>Test</TestLabel>
+      <h1 className="text-xl">Home page</h1>
+      <StatusLabel status={Status.Active}>Active</StatusLabel>
+      <StatusLabel status={Status.NotActive}>Not active</StatusLabel>
+      <StatusLabel status={Status.Pending}>Pending</StatusLabel>
+      <StatusLabel status={Status.Suspended}>Suspended</StatusLabel>
     </main>
   );
 }
