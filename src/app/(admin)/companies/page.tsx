@@ -55,6 +55,42 @@ export default function Page({}: PageProps) {
             country="USA"
             joinedDate="2023.02.19"
           />
+          <CompanyRow
+            id={5}
+            category="Products"
+            company="Costco Wholesale"
+            status={Status.Active}
+            promotion={true}
+            country="USA"
+            joinedDate="2023.02.19"
+          />
+          <CompanyRow
+            id={6}
+            category="Products"
+            company="Costco Wholesale"
+            status={Status.NotActive}
+            promotion={true}
+            country="USA"
+            joinedDate="2023.02.19"
+          />
+          <CompanyRow
+            id={7}
+            category="Products"
+            company="Costco Wholesale"
+            status={Status.Pending}
+            promotion={false}
+            country="USA"
+            joinedDate="2023.02.19"
+          />
+          <CompanyRow
+            id={8}
+            category="Products"
+            company="Costco Wholesale"
+            status={Status.Suspended}
+            promotion={true}
+            country="USA"
+            joinedDate="2023.02.19"
+          />
         </CompanyTable>
       </main>
     </>
