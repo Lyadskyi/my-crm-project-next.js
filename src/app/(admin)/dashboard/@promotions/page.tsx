@@ -11,6 +11,7 @@ export interface PageProps {}
 
 export default async function Page({}: PageProps) {
   const data = await getSummaryPromotions();
+
   return (
     <DashboardCard label="Promotions">
       <SummaryTable
